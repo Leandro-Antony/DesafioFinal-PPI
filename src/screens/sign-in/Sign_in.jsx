@@ -1,13 +1,14 @@
+import { useEffect } from 'react';
 import styles from './Sign_in.module.css';
 import Header from "../../components/Header.jsx"
-import { Mail } from "lucide-react";
-import { LockKeyhole } from "lucide-react";
-import { User } from "lucide-react";
-import { CalendarDays } from "lucide-react";
-import { Phone } from "lucide-react";
-import { Hash } from "lucide-react";
+import { Mail, LockKeyhole, User, CalendarDays, Phone, Hash } from "lucide-react";
 
 export default function Sign_in() {
+
+    useEffect(() => {
+        document.body.style.overflow = 'scroll';
+    }, []);
+
     return (
         <>
             <div className={styles.bg}></div>
@@ -16,8 +17,8 @@ export default function Sign_in() {
                 <Header />
 
                 <div className={styles.inner}>
-                    <div className={styles.login}>
-                        <h1 className={styles.greeting}>Seja bem-vindo de volta</h1>
+                    <div className={styles.sign_in}>
+                        <h1 className={styles.greeting}>Cadastrar-se</h1>
 
                         <div className={styles.input_}>
                             <User /> <input type="text" placeholder="Nome" className={styles.input} />
@@ -29,6 +30,7 @@ export default function Sign_in() {
                                 <CalendarDays /><input type="date" className={styles.input} />
                             </div>
                         </div>
+                        
                         <div className={styles.input__}>
                             <div className={styles.input_}>
                             <Phone /> <input type="tel" placeholder="Celular" className={styles.input} />

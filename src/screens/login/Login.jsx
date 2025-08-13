@@ -1,9 +1,17 @@
 import styles from "./Login.module.css";
 import Header from "../../components/Header.jsx";
-import { Mail } from "lucide-react";
-import { LockKeyhole } from "lucide-react";
+import { Mail, LockKeyhole } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Login() {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'; // Impede o scroll
+
+    return () => {
+      document.body.style.overflow = 'auto'; // Restaura o scroll
+    };
+  }, []);
+
   return (
     <>
         <div className={styles.bg}></div>

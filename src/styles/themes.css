@@ -1,53 +1,52 @@
 :root {
-    /* Background colors */
-    --background-primary: #0a0c1d; /* fundo mais escuro */
-    --background-secondary: #12142a; /* variação mais clara do fundo */
-    --background-tertiary: #1b1f3a; /* tom intermediário */
-    --background-quaternary: #0d1329; /* azul petróleo profundo */
-    --background-quinary: #141832; /* levemente mais claro que o primário */
-    --header-bg: #1d223f; /* topo com leve contraste */
+  /* Background colors */
+  --background-primary: #0a0c1d; /* fundo mais escuro */
+  --background-secondary: #12142a; /* variação mais clara do fundo */
+  --background-tertiary: #1b1f3a; /* tom intermediário */
+  --background-quaternary: #0d1329; /* azul petróleo profundo */
+  --background-quinary: #141832; /* levemente mais claro que o primário */
+  --header-bg: #1d223f; /* topo com leve contraste */
 
-    /* Contrast colors */
-    --contrast-primary: #ff005d; /* rosa neon intenso */
-    --contrast-secondary: #ff3388; /* rosa mais claro */
-    --contrast-tertiary: #ff66aa; /* rosa suave para detalhes */
-    --contrast-quaternary: #ff1e7b; /* magenta vibrante */
-    --contrast-quinary: #ff4d94; /* rosa médio */
-    --contrast-senary: #ff80b3; /* rosa pálido */
+  /* Contrast colors */
+  --contrast-primary: #ff005d; /* rosa neon intenso */
+  --contrast-secondary: #ff3388; /* rosa mais claro */
+  --contrast-tertiary: #ff66aa; /* rosa suave para detalhes */
+  --contrast-quaternary: #ff1e7b; /* magenta vibrante */
+  --contrast-quinary: #ff4d94; /* rosa médio */
+  --contrast-senary: #ff80b3; /* rosa pálido */
 
-    /* Text colors */
-    --text-primary: #ffffff; /* texto principal branco */
-    --text-secondary: #a4b2ff; /* azul claro para subtítulos */
-    --text-tertiary: #8ee6ff; /* azul neon suave */
-    --text-quaternary: #c0c5ff; /* azul acinzentado claro */
-    --text-muted: #7a84b7; /* texto menos importante */
-    --text-inverted: #0a0c1d; /* texto escuro para fundos claros */
-    
-    /* Accent colors */
-    --accent-primary: #00c8ff; /* azul neon */
-    --accent-secondary: #007bff; /* azul forte */
-    --accent-tertiary: #4dd0ff; /* azul mais suave */
-    --accent-quaternary: #00f0ff; /* ciano elétrico */
-    --accent-quinary: #5af3ff; /* ciano suave */
-    --accent-senary: #3ca6ff; /* azul celeste intenso */
-    
-    /* Border colors */
-    --border-primary: #1f2345; /* bordas discretas */
-    --border-secondary: #2c2f57; /* bordas médias */
-    --border-tertiary: #363b6e; /* bordas azuladas */
-    --dark-purple: #581283;
-    --border-quaternary: #4d527f; /* borda azul acinzentada */
-    --border-contrast: #ff005d; /* bordas chamativas */
-    --border-highlight: #00c8ff; /* bordas de destaque em azul */
+  /* Text colors */
+  --text-primary: #ffffff; /* texto principal branco */
+  --text-secondary: #a4b2ff; /* azul claro para subtítulos */
+  --text-tertiary: #8ee6ff; /* azul neon suave */
+  --text-quaternary: #c0c5ff; /* azul acinzentado claro */
+  --text-muted: #7a84b7; /* texto menos importante */
+  --text-inverted: #0a0c1d; /* texto escuro para fundos claros */
 
-    --neon-purple: #a020f0;
+  /* Accent colors */
+  --accent-primary: #00c8ff; /* azul neon */
+  --accent-secondary: #007bff; /* azul forte */
+  --accent-tertiary: #4dd0ff; /* azul mais suave */
+  --accent-quaternary: #00f0ff; /* ciano elétrico */
+  --accent-quinary: #5af3ff; /* ciano suave */
+  --accent-senary: #3ca6ff; /* azul celeste intenso */
+
+  /* Border colors */
+  --border-primary: #1f2345; /* bordas discretas */
+  --border-secondary: #2c2f57; /* bordas médias */
+  --border-tertiary: #363b6e; /* bordas azuladas */
+  --dark-purple: #581283;
+  --border-quaternary: #4d527f; /* borda azul acinzentada */
+  --border-contrast: #ff005d; /* bordas chamativas */
+  --border-highlight: #00c8ff; /* bordas de destaque em azul */
+
+  --neon-purple: #a020f0;
   --neon-blue: #00f0ff;
   --neon-cyan: #0ff0fc;
 
   /* novos verdes neon */
-  --neon-green: #39ff14;   /* verde neon puro */
-  --lime-green: #bfff00;   /* verde-limão vibrante */
-  --aqua-green: #00ffa6;   /* verde água fosforescente */
-  --electric-mint: #66ff99;/* verde menta elétrico */
-
+  --neon-green: #39ff14; /* verde neon puro */
+  --lime-green: #bfff00; /* verde-limão vibrante */
+  --aqua-green: #00ffa6; /* verde água fosforescente */
+  --electric-mint: #66ff99; /* verde menta elétrico */
 }
