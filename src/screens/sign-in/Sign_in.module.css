@@ -43,13 +43,14 @@ body {
 .sign_in {
   border-radius: 10px;
   height: fit-content;
-  width: 45rem;
-  height: 60rem;
-  padding: 2rem;
+  width: 100%; /* ocupa toda a largura possível */
+  max-width: 45rem; /* mas nunca passa disso */
+  min-width: 280px; /* largura mínima para não quebrar muito */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center;
+  padding: 1rem;
   background-image: linear-gradient(
     to right,
     var(--background-secondary),
@@ -60,6 +61,8 @@ body {
   &:hover {
     box-shadow: 0 0 3px var();
   }
+
+  
 }
 
 .greeting {
@@ -79,18 +82,20 @@ body {
   &:hover {
     color: var(--neon-purple);
   }
+
 }
 
 .input__ {
   display: flex;
   align-items: center;
-  width: 45rem;
+  width: 100%; /* acompanha a largura do container */
   gap: 0.7rem;
   color: var(--border-highlight);
   transition: 0.3s;
   &:hover {
     color: var(--neon-purple);
   }
+ 
 }
 
 .input_ svg {
@@ -98,6 +103,7 @@ body {
   height: 2.4rem;
   flex-shrink: 0;
   margin-bottom: 1rem;
+
 }
 
 .input {

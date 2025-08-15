@@ -39,7 +39,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
 
 .login {
@@ -52,11 +51,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    background-image: linear-gradient(to right, var(--background-secondary), var(--border-primary));
+    background-image: linear-gradient(to right, var(--background-secondary-transparent), var(--border-primary-transparent));
     border: 1.5px solid var(--dark-purple);
-
+    
     &:hover {
         box-shadow: 0 0 3px var();
+    }
+
+    @media (max-width: 768px) {
+        max-width: 90%; /* ocupa quase toda a largura da tela */
+        height: auto;   /* altura ajusta de acordo com o conteúdo */
+        padding: 1.5rem;
     }
 }
 

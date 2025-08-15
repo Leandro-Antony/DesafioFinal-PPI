@@ -2,6 +2,7 @@
   /* Background colors */
   --background-primary: #0a0c1d; /* fundo mais escuro */
   --background-secondary: #12142a; /* variação mais clara do fundo */
+  --background-secondary-transparent: #12142ae1; /* variação mais clara do fundo */
   --background-tertiary: #1b1f3a; /* tom intermediário */
   --background-quaternary: #0d1329; /* azul petróleo profundo */
   --background-quinary: #141832; /* levemente mais claro que o primário */
@@ -11,7 +12,7 @@
   --contrast-primary: #ff005d; /* rosa neon intenso */
   --contrast-secondary: #ff3388; /* rosa mais claro */
   --contrast-tertiary: #ff66aa; /* rosa suave para detalhes */
-  --contrast-quaternary: #ff1e7b; /* magenta vibrante */
+  --contrast-quaternary: #ff4592; /* magenta vibrante */
   --contrast-quinary: #ff4d94; /* rosa médio */
   --contrast-senary: #ff80b3; /* rosa pálido */
 
@@ -33,6 +34,7 @@
 
   /* Border colors */
   --border-primary: #1f2345; /* bordas discretas */
+  --border-primary-transparent: #1f2345dc; /* bordas discretas */
   --border-secondary: #2c2f57; /* bordas médias */
   --border-tertiary: #363b6e; /* bordas azuladas */
   --dark-purple: #581283;

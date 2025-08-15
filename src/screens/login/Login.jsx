@@ -1,5 +1,6 @@
 import styles from "./Login.module.css";
 import Header from "../../components/Header.jsx";
+import { Link, useNavigate } from "react-router";
 import { Mail, LockKeyhole } from "lucide-react";
 import { useEffect } from "react";
 
@@ -11,6 +12,8 @@ export default function Login() {
       document.body.style.overflow = 'auto'; // Restaura o scroll
     };
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -26,10 +29,10 @@ export default function Login() {
                 <Mail /> <input type="text" placeholder="Email" className={styles.input} />
               </div>
               <div className={styles.input_}>
-                <LockKeyhole /> <input type="text" placeholder="Senha" className={styles.input} />
+                <LockKeyhole /> <input type="password" placeholder="Senha" className={styles.input} />
               </div>
-              <button className={styles.btn}>Login</button>
-              <p className={styles.createAcc}>Não tem uma conta? <a href="">Crie uma!</a></p>
+              <button className={styles.btn} onClick={() => navigate("/")}>Login</button>
+              <p className={styles.createAcc}>Não tem uma conta? <Link to={"/sign-in"}>Crie uma!</Link></p>
             </div>
           </div>
         </div>

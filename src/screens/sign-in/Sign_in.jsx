@@ -3,11 +3,15 @@ import styles from './Sign_in.module.css';
 import Header from "../../components/Header.jsx"
 import { Mail, LockKeyhole, User, CalendarDays, Phone, Hash } from "lucide-react";
 
+import { useNavigate } from "react-router";
+
 export default function Sign_in() {
 
     useEffect(() => {
         document.body.style.overflow = 'scroll';
     }, []);
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -44,10 +48,9 @@ export default function Sign_in() {
                             <Mail /> <input type="text" placeholder="Email" className={styles.input} />
                         </div>
                         <div className={styles.input_}>
-                            <LockKeyhole /> <input type="text" placeholder="Senha" className={styles.input} />
+                            <LockKeyhole /> <input type="password" placeholder="Senha" className={styles.input} />
                         </div>
-                        <button className={styles.btn}>Login</button>
-                        <p className={styles.createAcc}>Não tem uma conta? <a href="">Crie uma!</a></p>
+                        <button className={styles.btn} onClick={() => navigate("/")}>Login</button>
                     </div>
                 </div>
             </div>

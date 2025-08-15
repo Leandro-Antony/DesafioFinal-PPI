@@ -1,0 +1,93 @@
+.card {
+  border: 2px solid var(--dark-purple);
+  border-radius: 13px;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+
+  background-image: linear-gradient(
+    to right,
+    var(--background-secondary-transparent),
+    var(--border-primary-transparent)
+  );
+  background-size: cover;
+  background-position: center;
+
+  transition: .3s ease-in .02s;
+
+  &:hover {
+    border: 2px solid var(--border-contrast)
+  }
+}
+
+.productImage {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: -6rem;
+  transition: .3s ease-in;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.productTitle {
+  color: var(--text-primary);
+  font-size: 2rem;
+  position: relative;
+  top: -10rem;
+}
+
+.productDescription {
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  top: -6rem;
+}
+
+.productPrice {
+  font-family: "Bebas Neue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: var(--contrast-quaternary);
+  font-size: 3.4rem;
+  padding: 0;
+  font-weight: bold;
+  position: relative;
+  top: -3rem;
+}
+
+.productBuy {
+  font-family: "Bebas Neue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2.1rem;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  border: none;
+  background-color: var(--neon-cyan);
+  
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 1rem;
+
+  transition: .3s ease-in;
+
+  z-index: 10;
+
+  &:hover {
+    background-color: var(--neon-purple);
+    box-shadow: 0 0 10px var(--neon-purple);
+    color: var(--text-primary);
+  }
+}
+
+.productBuy svg {
+  position: relative;
+  top: -0.3rem;
+}

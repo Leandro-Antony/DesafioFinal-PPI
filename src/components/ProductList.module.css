@@ -1,0 +1,66 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    /* expande a imagem além da tela */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: url('../assets/bg_shop.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchInput {
+    width: 35rem;
+    border-radius: 12px;
+    padding: .5rem 2rem;
+    border: solid .2rem var(--border-contrast);
+    margin: 1.5rem 0;
+    background: var(--background-tertiary);
+    z-index: 10;
+    color: var(--text-primary);
+
+    transition: .3s ease-in .02s;
+
+    &:hover {
+        border: solid .2rem var(--neon-blue);
+    }
+
+    @media (max-width: 768px) {
+        width: 70%;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem)); /* reduz o mínimo */
+    gap: 2rem;
+    width: 100%;
+    justify-content: center ;
+}
+
+/* Permitir que os filhos encolham */
+.grid > * {
+    min-width: 0;
+}
+
+
