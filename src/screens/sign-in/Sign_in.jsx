@@ -50,7 +50,7 @@ export default function Sign_in() {
                         <div className={styles.input_}>
                             <LockKeyhole /> <input type="password" placeholder="Senha" className={styles.input} />
                         </div>
-                        <button className={styles.btn} onClick={() => navigate("/")}>Login</button>
+                        <button className={styles.btn} onClick={() => navigate("/")}>Cadastrar-se</button>
                     </div>
                 </div>
             </div>
