@@ -2,6 +2,7 @@ import Login from "./screens/login/Login.jsx";
 import Sign_in from "./screens/sign-in/Sign_in.jsx";
 import Shop from "./screens/shop/Shop.jsx";
 import Cart from "./screens/Cart/Cart.jsx";
+import { ToastContainer } from "react-toastify";
 
 import { BrowserRouter, Route, Routes, Link } from "react-router";
 
@@ -10,6 +11,7 @@ import { CartProvider } from "./services/CartContext.jsx";
 function App() {
   return (
     <>
+    <ToastContainer />
       <CartProvider>
         <BrowserRouter>
           <Routes>
